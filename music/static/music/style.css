@@ -1,0 +1,263 @@
+body {
+    background: white url( images/me.jpg) no-repeat;
+    background-size: cover;
+}
+.navbar{
+	border-radius: 0;
+}
+.navbar-brand{
+	font-family: 'Satisfy', cursive;
+}
+.star-img{
+    max-width: 16px;
+}
+
+    .carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.carousel-inner > .item {
+    -webkit-transition: all 4s;
+    -moz-transition: all 4s;
+    -o-transition: all 4s;
+    transition: all 4s;
+}
+@keyframes show{
+    from{
+        height: auto;
+        overflow: visible;
+            opacity: 0;
+    }
+    to{
+        height: auto;
+        overflow: visible;
+            opacity: 1;
+    }
+}
+
+@keyframes hider{
+    from{
+        height: auto;
+    }
+    to{
+        height: auto;
+        overflow: visible;
+    }
+}
+/*
+.element-animation{
+  animation: animationFrames2 ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; 
+   animation-delay: 222s;
+   animation-duration: 3s;
+}
+*/
+@keyframes animationFrame3{
+  0% {
+    opacity:0;
+    transform:  translate(40px, 40px)  ;
+    /*transform: rotate(-345deg);*/
+  }
+  50% {
+    opacity:0.0;
+    transform:  translate(-58px,48px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(-105px,65px)  ;
+   /* transform: rotate(-360deg);*/
+  }
+}
+.ele-align{
+    text-align: center;
+}
+.ele-pos{
+    position: absolute;
+    display: inline-block !important;
+}
+.element-animation{
+    animation: animationFrames ease 2s;
+    animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; 
+  animation-duration: 3s;
+ }
+ @keyframes animationFrames{
+  0% {
+    opacity:0;
+    transform:  translate(-0px,48px)  ;
+  }
+  50% {
+    opacity:0.0;
+    transform:  translate(-58px,48px)  ;
+  }
+  70% {
+    opacity:0;
+    transform:  translate(-58px,48px)  ;
+  }
+
+  100% {
+    opacity:1;
+    transform:  translate(-105px,65px)  ;
+  }
+}
+
+.element-animation2{
+  animation: animationFrames2 ease 3s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; 
+  animation-duration: 4s;
+
+}
+
+@keyframes animationFrames2{
+  0% {
+    opacity:0;
+    transform: translate(135px,45px);
+  }
+  70% {
+    opacity:0.0;
+    transform: translate(135px,45px);
+  }
+  80% {
+    opacity:0;
+    transform: translate(135px,45px);
+  }
+100% {
+    opacity: 1;
+    transform: translate(135px,45px);
+}
+}
+
+
+.element-animation3{
+    animation: animationFrames3 ease 3s;
+    animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; 
+  animation-duration: 4.5s;
+ }
+ @keyframes animationFrames3{
+  0% {
+    opacity:0;
+    transform: translate(-170px,-40px);
+  }
+  50% {
+    opacity:0.0;
+    transform: translate(-170px,-40px);
+  }
+  70% {
+    opacity:0;
+    transform: translate(-170px,-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-195px,60px);
+}
+}
+.element-animation4{
+    animation: animationFrames4 ease 3s;
+    animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; 
+  animation-duration: 6s;
+ }
+ @keyframes animationFrames4    {
+  0% {
+    opacity:0;
+    transform:  translate(-0px,48px)  ;
+  }
+  50% {
+    opacity:0.0;
+    transform:  translate(-58px,48px)  ;
+  }
+  70% {
+    opacity:0.0;
+    transform:  translate(-58px,48px)  ;
+  }
+
+  100% {
+    opacity:1;
+    transform: translate(-90px,25px);
+  }
+}
+.element-animation5{
+    animation: animationFrames5 ease 3s;
+    animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; 
+  animation-duration: 5s;
+ }
+ @keyframes animationFrames5    {
+  0% {
+    opacity:0;
+    transform:  translate(-0px,48px)  ;
+  }
+  50% {
+    opacity:0.0;
+    transform:  translate(-58px,48px)  ;
+  }
+  70% {
+    opacity:0.0;
+    transform: translate(-490px,475px);
+  }
+
+  100% {
+    opacity:1;
+    transform: translate(-410px,275px);
+  }
+}
+.element-animation6{
+    animation: animationFrames6 ease 3s;
+    animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; 
+  animation-duration: 6.5s;
+ }
+ @keyframes animationFrames6    {
+  0% {
+    opacity:0;
+    transform:  translate(-0px,48px)  ;
+  }
+  50% {
+    opacity:0.0;
+    transform:  translate(-58px,48px)  ;
+  }
+  70% {
+    opacity:0.0;
+    transform: translate(-531px,400px);
+  }
+
+  100% {
+    opacity:1;
+    transform: translate(-431px,380px);
+  }
+}
+
+
+.thumbnail{
+  padding: 0;
+}

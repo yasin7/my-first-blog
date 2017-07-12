@@ -1,0 +1,33 @@
+{% extends 'music/base.html' %}
+{% block title %}Register{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-7 col-sm-12">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h3>Create a New Account</h3>
+					<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+						{% csrf_token %}
+						{% include 'music/form-template.html' %}
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-success">Submit</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+ <img class="img-responsive element-animation ele-pos" src="{% static 'music/images/arrow-one.png' %}" alt="My image">
+                            <img class="img-responsive element-animation2 ele-pos" src="{% static "music/images/signature1.png" %}" alt="My image"/>
+                            <img class="img-responsive element-animation3 ele-pos" src="{% static "music/images/arrow-two.png" %}" alt="My image"/>
+                            <img class="img-responsive element-animation4 ele-pos" src="{% static "music/images/signature2.png" %}" alt="My image"/>
+                            <img class="img-responsive element-animation5 ele-pos" src="{% static "music/images/arrow-three.png" %}" alt="My image"/>
+                            <img class="img-responsive element-animation6 ele-pos" src="{% static "music/images/signature3.png" %}" alt="My image"/>

@@ -1,0 +1,168 @@
+{% extends 'music/base.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 slider-col">
+              <div id="Carousel" class="carousel slide carousel-fade fader-slider">
+        <div class="carousel-inner">
+        {% if Sliderss %}
+            {% for slider in Sliderss %}
+            <div class="item {% if forloop.first %} active {% endif %} ele-align">
+                    <div class="thumbnail">
+                        
+                            
+                            {% if slider.id == 3 %}
+                             <img class="img-responsive element-animation ele-pos" src="{% static 'music/images/arrow-one.png' %}" alt="My image">
+                            <img class="img-responsive element-animation2 ele-pos" src="{% static "music/images/signature1.png" %}" alt="My image"/>
+                            <img class="img-responsive element-animation3 ele-pos" src="{% static "music/images/arrow-two.png" %}" alt="My image"/>
+                            <img class="img-responsive element-animation4 ele-pos" src="{% static "music/images/signature2.png" %}" alt="My image"/>
+                            <img class="img-responsive element-animation5 ele-pos" src="{% static "music/images/arrow-three.png" %}" alt="My image"/>
+                            <img class="img-responsive element-animation6 ele-pos" src="{% static "music/images/signature3.png" %}" alt="My image"/>
+                            {% endif %}
+                            <div class="first-slide-img">
+                <img src="{{ slider.banner_img.url }}" class="img-responsive">
+                </div>
+                {% if slider.id == 1 %}
+                        <div class="carousel-caption">
+                            <h3>{{ slider.banner_title }}</h3>
+                       </div>
+                {% endif %}
+                    </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+        <a class="left carousel-control" href="#Carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#Carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <div class="space-parent wow fadeInDown animated">
+            <a class="space-contact" href="">ENQUIRE NOW</a> 
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid who-fluid ee">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 who-col wow fadeInUp animated" data-wow-duration="2s">
+                <h2>WHO WE ARE</h2>
+                <p>INEX  INTERIOR EXTERIOR DESIGNERS PTY LTD is a full service interior design firm specializing in residential & commercial and corporate interior and exterior architecture & design. We strive to make each home, retail shops or  space we design as unique as the people it serves. Our interior design team specializes in integrating the elements of a design to make it flow consistently thru the space. We select each individual item to work in the big picture, while always thinking of the end result. Our wide ranging interior design services include but aren't limited to:</p>
+                <a class="who-more wow fadeInUp animated" data-wow-duration="2s" href="<?php echo home_url(); ?>/about-us">Know More</a>
+                <img class=" wow fadeInUp animated" data-wow-duration="2s" src="{% static "music/images/interior.jpg" %}" alt="second slide">
+            </div>
+            <div class="rectangle-div wow fadeInUp animated" data-wow-duration="2s"><img class="rectangle wow fadeInUp animated" src="{% static "music/images/rectangle.png" %}" alt="First rectangle"></div>
+            <div class="col-md-6 col-sm-6 col-xs-12 exterior-col">
+                <img class=" wow fadeInUp animated" data-wow-duration="2s" src="{% static "music/images/exterior.jpg" %}" alt="First slide">
+                <div class="div-20 wow fadeInUp animated" data-wow-duration="2s">
+                    <h3><span>20</span> YEARS WORKING</h3>
+                    <p>INEX INTERIOR EXTERIOR DESIGNERS have over 20 years Overseas and Australian experience in Residential, corporate and commercial interior  architecture and exterior design, Project management, sourcing and procurement.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid dom-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 dom-cols wow fadeInUp animated" data-wow-delay="0.0s" data-wow-duration="2s">
+                
+                    <a href="#">
+                        <div class="dom-sub"><p class="dom-sub-p">DOMESTIC</p></div>
+                    </a>
+            </div>
+            <div class="col-md-4 dom-cols wow fadeInUp animated" data-wow-delay="0.2s" data-wow-duration="2s">
+                <a href="#">
+                    <div class="com-sub"><p class="dom-sub-p">COMERCIAL</p></div>
+                </a>
+            </div>
+            <div class="col-md-4 dom-cols wow fadeInUp animated" data-wow-delay="0.4s" data-wow-duration="2s">
+                <a href="#">
+                    <div class="cor-sub">
+                       <p class="dom-sub-p"> CORPORATE</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+                   
+
+<div class="container-fluid works-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 works-col wow fadeInUp animated" data-wow-duration="2s">
+                <h3>Our Latest Works</h3>
+                
+                {% if posts %}
+                    {% for work in posts %}
+                        <div class="col-md-4">
+                        <h1>heeeee</h1>
+                            <img src="{{ work.work_img.url }}" class="img-responsive">
+                        </div>
+                    {% endfor %}
+                    <p>here</p>
+                    <h1>hhhhs</h1>
+                {% endif %}
+
+
+            
+
+
+
+                <a class="works-more wow fadeInUp animated" data-wow-duration="2s" href="#">KNOW MORE</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid pro-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <p class="pro-1 wow fadeInUp animated" data-wow-duration="2s">Get a Professional Services, Call us Now. <span>0422763938</span></p> 
+                <p class="pro-2 wow fadeInUp animated" data-wow-duration="2s">To learn more about how our services can provide a great solution for your project contact us now or request a free.</p>
+            </div>
+            <div class="col-md-2 contact-pro">
+                <a class="works-more wow fadeInUp animated" href="#" data-wow-duration="2s">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+<!--         <div id="Carousel" class="carousel slide carousel-fade fader-slider">
+        <div class="carousel-inner">
+        {% if Sliders %}
+            {% for slider in Sliders %}
+            <div class="item {% if forloop.first %} active {% endif %} ele-align">
+                    <div class="thumbnail">
+                        <a href="{% url 'music:detail' slider.id %}">
+                            
+                            
+                            <div class="first-slide-img">
+                <img src="{{ slider.banner_img.url }}" class="img-responsive">
+                </div>
+                        </a>
+                        <div class="caption">
+                            <h2>{{ slider.banner_title }}</h2>
+                </div>
+                    </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+        </div> -->
+
+
+
+
+
+{% endblock %}
